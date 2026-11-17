@@ -172,6 +172,14 @@
             font-weight: bold;
             color: #0b4619;
         }
+        .kitab-sub-group {
+            display: none;
+            background: #f1f8f3;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 8px;
+            border: 1px solid #c2e0c6;
+        }
     </style>
 </head>
 <body>
@@ -318,11 +326,29 @@
                 <!-- পরীক্ষার ফলাফল যুক্ত করা -->
                 <div class="section-divider">🎓 পরীক্ষার ফলাফল যুক্ত করুন</div>
                 <label>জামাত / বিভাগ:</label>
-                <select id="addClass">
+                <select id="addClass" onchange="toggleAdminKitabSub()">
+                    <option value="নূরানী ও মক্তব বিভাগ">নূরানী ও মক্তব বিভাগ</option>
                     <option value="নাজেরা বিভাগ">নাজেরা বিভাগ</option>
                     <option value="হিফজ বিভাগ">হিফজ বিভাগ</option>
                     <option value="কিতাব বিভাগ">কিতাব বিভাগ</option>
                 </select>
+
+                <!-- এডমিন প্যানেলে কিতাব বিভাগের সাব-অপশন -->
+                <div id="adminKitabDiv" class="kitab-sub-group">
+                    <label style="margin-top:0;">কিতাব বিভাগের জামাত নির্বাচন করুন:</label>
+                    <select id="addKitabSubClass">
+                        <option value="১ম বর্ষ">১ম বর্ষ</option>
+                        <option value="মিজান">মিজান</option>
+                        <option value="নাহবেমীর">নাহবেমীর</option>
+                        <option value="হেদাতুন্নাহু">হেদাতুন্নাহু</option>
+                        <option value="ক্বাফিয়া">ক্বাফিয়া</option>
+                        <option value="শরহেজামি">শরহেজামি</option>
+                        <option value="শরহে বেকায়া">শরহে বেকায়া</option>
+                        <option value="জালালাইন">জালালাইন</option>
+                        <option value="মিশকাত">মিশকাত</option>
+                    </select>
+                </div>
+
                 <label>রোল নম্বর:</label>
                 <input type="text" id="addRoll" placeholder="যেমন: ১০১">
                 <label>শিক্ষার্থীর নাম:</label>
@@ -346,12 +372,28 @@
                 <input type="tel" id="stPhone" placeholder="০১৭XXXXXXXX" required>
 
                 <label>বিভাগ বা জামাত:</label>
-                <select id="stDept">
+                <select id="stDept" onchange="toggleFormKitabSub()">
                     <option value="নূরানী ও মক্তব বিভাগ">নূরানী ও মক্তব বিভাগ</option>
                     <option value="নাজেরা বিভাগ">নাজেরা বিভাগ</option>
                     <option value="হিফজ বিভাগ">হিফজ বিভাগ</option>
                     <option value="কিতাব বিভাগ">কিতাব বিভাগ</option>
                 </select>
+
+                <!-- ভর্তি ফর্মে কিতাব বিভাগের সাব-অপশন -->
+                <div id="formKitabDiv" class="kitab-sub-group">
+                    <label style="margin-top:0;">কিতাব বিভাগের জামাত নির্বাচন করুন:</label>
+                    <select id="formKitabSubClass">
+                        <option value="১ম বর্ষ">১ম বর্ষ</option>
+                        <option value="মিজান">মিজান</option>
+                        <option value="নাহবেমীর">নাহবেমীর</option>
+                        <option value="হেদাতুন্নাহু">হেদাতুন্নাহু</option>
+                        <option value="ক্বাফিয়া">ক্বাফিয়া</option>
+                        <option value="শরহেজামি">শরহেজামি</option>
+                        <option value="শরহে বেকায়া">শরহে বেকায়া</option>
+                        <option value="জালালাইন">জালালাইন</option>
+                        <option value="মিশকাত">মিশকাত</option>
+                    </select>
+                </div>
 
                 <label>গ্রাম, থানা, জেলা, বিভাগ:</label>
                 <textarea id="stAddress" rows="3" placeholder="গ্রাম, থানা, জেলা ও বিভাগ লিখুন" required></textarea>
@@ -365,11 +407,28 @@
         <div class="card">
             <h2>🎓 পরীক্ষার ফলাফল ও তথ্য যাচাই</h2>
             <label>জামাত নির্বাচন:</label>
-            <select id="searchClass">
+            <select id="searchClass" onchange="toggleSearchKitabSub()">
+                <option value="নূরানী ও মক্তব বিভাগ">নূরানী ও মক্তব বিভাগ</option>
                 <option value="নাজেরা বিভাগ">নাজেরা বিভাগ</option>
                 <option value="হিফজ বিভাগ">হিফজ বিভাগ</option>
                 <option value="কিতাব বিভাগ">কিতাব বিভাগ</option>
             </select>
+
+            <!-- ফলাফল সার্চে কিতাব বিভাগের সাব-অপশন -->
+            <div id="searchKitabDiv" class="kitab-sub-group">
+                <label style="margin-top:0;">কিতাব বিভাগের জামাত নির্বাচন করুন:</label>
+                <select id="searchKitabSubClass">
+                    <option value="১ম বর্ষ">১ম বর্ষ</option>
+                    <option value="মিজান">মিজান</option>
+                    <option value="নাহবেমীর">নাহবেমীর</option>
+                    <option value="হেদাতুন্নাহু">হেদাতুন্নাহু</option>
+                    <option value="ক্বাফিয়া">ক্বাফিয়া</option>
+                    <option value="শরহেজামি">শরহেজামি</option>
+                    <option value="শরহে বেকায়া">শরহে বেকায়া</option>
+                    <option value="জালালাইন">জালালাইন</option>
+                    <option value="মিশকাত">মিশকাত</option>
+                </select>
+            </div>
 
             <label>রোল নম্বর:</label>
             <input type="text" id="searchRoll" placeholder="রোল নম্বর লিখুন (যেমন: ১০১)">
@@ -392,9 +451,29 @@
 
         // নমুনা ফলাফল ডাটাবেস
         let resultsDB = [
-            { dept: "নাজেরা বিভাগ", roll: "১০১", name: "মোঃ আব্দুল্লাহ", result: "মুমতাজ (১ম স্থান)" },
-            { dept: "হিফজ বিভাগ", roll: "১০২", name: "মোঃ ওমর ফারুক", result: "জায়্যিদ জিদ্দান" }
+            { dept: "নাজেরা বিভাগ", subDept: "", roll: "১০১", name: "মোঃ আব্দুল্লাহ", result: "মুমতাজ (১ম স্থান)" },
+            { dept: "হিফজ বিভাগ", subDept: "", roll: "১০২", name: "মোঃ ওমর ফারুক", result: "জায়্যিদ জিদ্দান" },
+            { dept: "কিতাব বিভাগ", subDept: "মিজান", roll: "১০৩", name: "হাফেজ মাওলানা ইব্রাহিম", result: "মুমতাজ" }
         ];
+
+        // ড্রপডাউন টগল ফাংশন (কিতাব বিভাগ সিলেক্ট করলে সাব-মেনু দেখাবে)
+        function toggleAdminKitabSub() {
+            const val = document.getElementById("addClass").value;
+            const subDiv = document.getElementById("adminKitabDiv");
+            subDiv.style.display = (val === "কিতাব বিভাগ") ? "block" : "none";
+        }
+
+        function toggleFormKitabSub() {
+            const val = document.getElementById("stDept").value;
+            const subDiv = document.getElementById("formKitabDiv");
+            subDiv.style.display = (val === "কিতাব বিভাগ") ? "block" : "none";
+        }
+
+        function toggleSearchKitabSub() {
+            const val = document.getElementById("searchClass").value;
+            const subDiv = document.getElementById("searchKitabDiv");
+            subDiv.style.display = (val === "কিতাব বিভাগ") ? "block" : "none";
+        }
 
         // এডমিন লগইন
         function loginAdmin() {
@@ -485,12 +564,13 @@
         // ফলাফল সেভ করা
         function saveResult() {
             const dept = document.getElementById("addClass").value;
+            const subDept = (dept === "কিতাব বিভাগ") ? document.getElementById("addKitabSubClass").value : "";
             const roll = document.getElementById("addRoll").value.trim();
             const name = document.getElementById("addName").value.trim();
             const result = document.getElementById("addResult").value.trim();
 
             if (roll && name && result) {
-                resultsDB.push({ dept, roll, name, result });
+                resultsDB.push({ dept, subDept, roll, name, result });
                 alert("✅ শিক্ষার্থীর ফলাফল সফলভাবে যুক্ত হয়েছে!");
                 document.getElementById("addRoll").value = "";
                 document.getElementById("addName").value = "";
@@ -503,21 +583,30 @@
         // ফলাফল চেক করা
         function checkResult() {
             const dept = document.getElementById("searchClass").value;
+            const subDept = (dept === "কিতাব বিভাগ") ? document.getElementById("searchKitabSubClass").value : "";
             const roll = document.getElementById("searchRoll").value.trim();
             const display = document.getElementById("resultDisplay");
 
-            const found = resultsDB.find(item => item.dept === dept && item.roll === roll);
+            const found = resultsDB.find(item => {
+                if (dept === "কিতাব বিভাগ") {
+                    return item.dept === dept && item.subDept === subDept && item.roll === roll;
+                } else {
+                    return item.dept === dept && item.roll === roll;
+                }
+            });
 
             display.style.display = "block";
             if (found) {
+                let classInfo = found.dept;
+                if (found.subDept) classInfo += ` (${found.subDept})`;
                 display.innerHTML = `
                     <strong>শিক্ষার্থীর নাম:</strong> ${found.name}<br>
-                    <strong>জামাত:</strong> ${found.dept}<br>
+                    <strong>বিভাগ/জামাত:</strong> ${classInfo}<br>
                     <strong>রোল নম্বর:</strong> ${found.roll}<br>
                     <strong>ফলাফল:</strong> <span style="color:#0b4619; font-weight:bold;">${found.result}</span>
                 `;
             } else {
-                display.innerHTML = `<span style="color:#d90429;">❌ দুঃখিত! এই রোল নম্বরের কোনো ফলাফল পাওয়া যায়নি।</span>`;
+                display.innerHTML = `<span style="color:#d90429;">❌ দুঃখিত! এই জামাত ও রোল নম্বরের কোনো ফলাফল পাওয়া যায়নি।</span>`;
             }
         }
 
@@ -525,8 +614,14 @@
         function submitAdmission(e) {
             e.preventDefault();
             const name = document.getElementById("stName").value;
-            alert(`আলহামদুলিল্লাহ! ${name}-এর ভর্তি আবেদনটি সফলভাবে গৃহীত হয়েছে। শীঘ্রই মাদ্রাসা কর্তৃপক্ষ যোগাযোগ করবে।`);
+            const dept = document.getElementById("stDept").value;
+            let subDeptText = "";
+            if (dept === "কিতাব বিভাগ") {
+                subDeptText = " (" + document.getElementById("formKitabSubClass").value + ")";
+            }
+            alert(`আলহামদুলিল্লাহ! ${name}-এর ভর্তি আবেদন (${dept}${subDeptText}) সফলভাবে গৃহীত হয়েছে। শীঘ্রই মাদ্রাসা কর্তৃপক্ষ যোগাযোগ করবে।`);
             e.target.reset();
+            document.getElementById("formKitabDiv").style.display = "none";
         }
     </script>
 
