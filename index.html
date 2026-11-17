@@ -3,7 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Search Engine Optimization (গুগল বা সার্চ ইঞ্জিনের জন্য) -->
     <title>মাদরাসায়ে জামিউল উলূম ঘাটাইল</title>
+    <meta name="description" content="মাদরাসায়ে জামিউল উলূম ঘাটাইল - কলেজ মোড়, ঘাটাইল, টাঙ্গাইল। নূরানী, নাজেরা, হিফজ এবং কিতাব বিভাগ সংবলিত আদর্শ দ্বীনি শিক্ষা প্রতিষ্ঠান।">
+    <meta name="keywords" content="Madrasaye Jamiul Ulum Ghatail, জামিউল উলূম ঘাটাইল, ঘাটাইল মাদ্রাসা, Qawmi Madrasah">
+    
+    <!-- ব্রাউজার ট্যাব লোগো বা ফেভিকন -->
+    <link rel="icon" type="image/jpeg" href="1.jpg">
+
+    <!-- Social Media & Google Open Graph Meta Tags (সার্চ ও শেয়ার করার সময় লোগো দেখানোর জন্য) -->
+    <meta property="og:title" content="মাদরাসায়ে জামিউল উলূম ঘাটাইল">
+    <meta property="og:description" content="নূরানী, নাজেরা, হিফজ এবং কিতাব বিভাগ। কলেজ মোড়, ঘাটাইল, টাঙ্গাইল।">
+    <meta property="og:image" content="1.jpg">
+    <meta property="og:type" content="website">
+
     <style>
         :root {
             --primary: #0b4619;
@@ -140,6 +154,7 @@
         .btn-gold { background-color: var(--gold-dark); }
         .btn-gold:hover { background-color: #966d08; }
         .btn-danger { background-color: var(--danger); }
+        .btn-warning { background-color: #ffc107; color: #000; }
         
         .notice-box {
             background-color: #fff8e1;
@@ -148,6 +163,19 @@
             margin-bottom: 20px;
             border-radius: 4px;
             font-size: 14px;
+        }
+        .features-box {
+            background: #eef7f0;
+            border: 1px solid #c2e0c6;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+        .features-box ul {
+            margin: 5px 0 0 20px;
+            padding: 0;
+            font-size: 14px;
+            line-height: 1.6;
         }
         .table-responsive {
             overflow-x: auto;
@@ -195,7 +223,7 @@
 <body>
 
     <div class="header">
-        <img src="1.jpg" alt="লোগো" class="logo-img" onerror="this.style.display='none'">
+        <img src="1.jpg" alt="মাদরাসায়ে জামিউল উলূম ঘাটাইল লোগো" class="logo-img" onerror="this.style.display='none'">
         <h1>মাদরাসায়ে জামিউল উলূম ঘাটাইল</h1>
         <p>কলেজ মোড়, ঘাটাইল, টাঙ্গাইল | স্থাপিত : ২০২৬</p>
     </div>
@@ -214,8 +242,27 @@
         <!-- ১. হোম ও নোটিশ সেকশন -->
         <div id="homeTab" class="section-content active">
             <div class="notice-box">
-                <strong>📢 জরুরি নোটিশ বোর্ড:</strong> <span id="liveNoticeText">মাদরাসায় ২০২৬ শিক্ষাবর্ষের ভর্তি কার্যক্রম চলছে।</span>
+                <strong>📢 নোটিশ বোর্ড:</strong>
+                <div id="publicNoticeList" style="margin-top: 8px;"></div>
             </div>
+
+            <div class="features-box">
+                <h3 style="margin-top:0; color:var(--primary);">🌟 আমাদের বৈশিষ্ট্যসমূহ:</h3>
+                <ul>
+                    <li>ইসলামি ও জেনারেল শিক্ষার সমন্বিত পাঠদান।</li>
+                    <li>কুরআন-সুন্নাহর আলোকে আদর্শ মানুষ গড়ার প্রত্যয়।</li>
+                    <li>মনোরম, নিরাপদ ও সিসিটিভি-নিয়ন্ত্রিত ক্যাম্পাস।</li>
+                    <li>আবাসিক ও অনাবাসিক শিক্ষার সুব্যবস্থা।</li>
+                    <li>ডে-কেয়ার ও ডে-নাইট কেয়ার সুবিধা।</li>
+                    <li>হিফজ, মাদানী নেসাব ও জেনারেল শিক্ষার সমন্বয়।</li>
+                    <li>নিয়মিত ক্লাস টেস্ট, মাসিক পরীক্ষা ও অভিভাবক অবহিতকারণ।</li>
+                    <li>আধুনিক শিক্ষা উপকরণ ও মাল্টিমিডিয়া ক্লাসের ব্যবস্থা।</li>
+                    <li>ইসলামী আদব-আখলাক ও নৈতিকতা শিক্ষায় বিশেষ গুরুত্ব।</li>
+                    <li>নিয়মিত সালাত, তিলাওয়াত ও দোয়া-মাসনূন আমলের অনুশীলন।</li>
+                    <li>মেধাবী ও অসচ্ছল শিক্ষার্থীদের জন্য বিশেষ সুযোগ-সুবিধা।</li>
+                </ul>
+            </div>
+
             <div class="card">
                 <h2>মাদরাসার পরিচিতি</h2>
                 <p>মাদরাসায়ে জামিউল উলূম ঘাটাইল একটি আদর্শ দ্বীনি শিক্ষা প্রতিষ্ঠান। এখানে নূরানী, নাজেরা, হিফজ এবং কিতাব বিভাগে দক্ষ উস্তাদগণের মাধ্যমে পাঠদান করা হয়।</p>
@@ -223,7 +270,7 @@
             </div>
         </div>
 
-        <!-- ২. অনলাইন ভর্তি আবেদন সেকশন (সম্পূর্ণ বিস্তারিত ফরম) -->
+        <!-- ২. অনলাইন ভর্তি আবেদন সেকশন -->
         <div id="admissionTab" class="section-content">
             <div class="card">
                 <h2>📝 অনলাইন ভর্তি আবেদন ফরম</h2>
@@ -274,675 +321,3 @@
                             <option value="নাহবেমীর">নাহবেমীর</option>
                             <option value="হেদাতুন্নাহু">হেদাতুন্নাহু</option>
                             <option value="ক্বাফিয়া">ক্বাফিয়া</option>
-                            <option value="শরহেজামি">শরহেজামি</option>
-                            <option value="শরহে বেকায়া">শরহে বেকায়া</option>
-                            <option value="জালালাইন">জালালাইন</option>
-                            <option value="মিশকাত">মিশকাত</option>
-                        </select>
-                    </div>
-
-                    <h4 style="margin-top:18px; margin-bottom:5px; color:var(--primary); border-bottom:1px solid #eee; padding-bottom:4px;">স্থায়ী ঠিকানা:</h4>
-                    <div class="row">
-                        <div class="col">
-                            <label>গ্রাম / মহল্লা:</label>
-                            <input type="text" id="appVillage" placeholder="গ্রামের নাম" required>
-                        </div>
-                        <div class="col">
-                            <label>ডাকঘর (পোস্ট অফিস):</label>
-                            <input type="text" id="appPost" placeholder="ডাকঘরের নাম" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <label>থানা / উপজেলা:</label>
-                            <input type="text" id="appThana" placeholder="থানার নাম" required>
-                        </div>
-                        <div class="col">
-                            <label>জেলা:</label>
-                            <input type="text" id="appDistrict" placeholder="জেলার নাম" required>
-                        </div>
-                    </div>
-
-                    <p style="color:var(--danger); font-size:12px; font-weight:bold; margin-top:12px;">* শর্তাবলী: মাদরাসায় কোনো অবস্থাতেই মোবাইল ফোন আনা যাবে না।</p>
-                    <button type="submit" class="btn">ভর্তি আবেদন জমা দিন</button>
-                </form>
-            </div>
-        </div>
-
-        <!-- ৩. ফলাফল যাচাই সেকশন -->
-        <div id="resultTab" class="section-content">
-            <div class="card">
-                <h2>🎓 পরীক্ষার ফলাফল যাচাই</h2>
-                <label>বিভাগ বা জামাত:</label>
-                <select id="searchResultDept" onchange="toggleKitabSub('searchResultDept', 'searchKitabDiv')">
-                    <option value="নূরানী ও মক্তব বিভাগ">নূরানী ও মক্তব বিভাগ</option>
-                    <option value="নাজেরা বিভাগ">নাজেরা বিভাগ</option>
-                    <option value="হিফজ বিভাগ">হিফজ বিভাগ</option>
-                    <option value="কিতাব বিভাগ">কিতাব বিভাগ</option>
-                </select>
-
-                <div id="searchKitabDiv" class="kitab-sub-group">
-                    <label style="margin-top:0;">কিতাব বিভাগের জামাত:</label>
-                    <select id="searchResultSubDept">
-                        <option value="১ম বর্ষ">১ম বর্ষ</option>
-                        <option value="মিজান">মিজান</option>
-                        <option value="নাহবেমীর">নাহবেমীর</option>
-                        <option value="হেদাতুন্নাহু">হেদাতুন্নাহু</option>
-                        <option value="ক্বাফিয়া">ক্বাফিয়া</option>
-                        <option value="শরহেজামি">শরহেজামি</option>
-                        <option value="শরহে বেকায়া">শরহে বেকায়া</option>
-                        <option value="জালালাইন">জালালাইন</option>
-                        <option value="মিশকাত">মিশকাত</option>
-                    </select>
-                </div>
-
-                <label>রোল নম্বর বা শিক্ষার্থীর নাম:</label>
-                <input type="text" id="searchResultQuery" placeholder="রোল বা নাম লিখে খুঁজুন...">
-
-                <button class="btn" onclick="searchResult()">ফলাফল দেখুন</button>
-
-                <div id="searchResultOutput" style="margin-top:15px;"></div>
-            </div>
-        </div>
-
-        <!-- ৪. বেতন ও রশিদ চেক সেকশন -->
-        <div id="feeCheckTab" class="section-content">
-            <div class="card">
-                <h2>💳 বেতন ও রশিদ যাচাই</h2>
-                <label>রশিদ নম্বর অথবা ছাত্রের রোল দিন:</label>
-                <input type="text" id="checkReceiptInput" placeholder="যেমন: REC-1001 বা রোল নম্বর">
-                <button class="btn" onclick="checkReceipt()">রশিদ তথ্য যাচাই করুন</button>
-
-                <div id="receiptCheckOutput" style="margin-top:15px;"></div>
-            </div>
-        </div>
-
-        <!-- ৫. এডমিন প্যানেল সেকশন -->
-        <div id="adminTab" class="section-content">
-            <div class="card" id="adminLoginCard">
-                <h2>🔐 এডমিন লগইন</h2>
-                <label>দায়িত্বশীল পদবি:</label>
-                <select id="adminRoleSelect">
-                    <option value="মুহতামিম">মুহতামিম</option>
-                    <option value="হিসাব রক্ষক">হিসাব রক্ষক</option>
-                    <option value="নায়েবে মুহতামিম">নায়েবে মুহতামিম</option>
-                    <option value="শিক্ষা সচিব">শিক্ষা সচিব</option>
-                </select>
-                <label>পাসওয়ার্ড:</label>
-                <input type="password" id="adminPassInput" placeholder="পাসওয়ার্ড দিন">
-                <button class="btn btn-gold" onclick="loginAdmin()">লগইন করুন</button>
-            </div>
-
-            <!-- মূল এডমিন ড্যাশবোর্ড -->
-            <div id="adminDashboardCard" style="display:none;">
-                <div style="background:#eef7f0; padding:12px; border-radius:6px; margin-bottom:15px; display:flex; justify-content:space-between; align-items:center;">
-                    <span>স্বাগতম, <strong id="currentAdminName">এডমিন</strong>!</span>
-                    <button class="btn btn-danger" style="width:auto; margin:0; padding:6px 12px; font-size:13px;" onclick="logoutAdmin()">লগআউট</button>
-                </div>
-
-                <!-- উপ-মেনু ট্যাব -->
-                <div style="display:flex; gap:5px; flex-wrap:wrap; margin-bottom:20px;">
-                    <button class="btn" style="flex:1; margin:0; font-size:12px; padding:10px 6px;" onclick="switchAdminSub('subFees')">🧾 বেতন গ্রহণ</button>
-                    <button class="btn" style="flex:1; margin:0; font-size:12px; padding:10px 6px;" onclick="switchAdminSub('subAdmission')">📋 ভর্তি অনুমোদন</button>
-                    <button class="btn" style="flex:1; margin:0; font-size:12px; padding:10px 6px;" onclick="switchAdminSub('subStudents')">👥 ছাত্র তালিকা</button>
-                    <button class="btn" style="flex:1; margin:0; font-size:12px; padding:10px 6px;" onclick="switchAdminSub('subIncome')">💰 আয়</button>
-                    <button class="btn" style="flex:1; margin:0; font-size:12px; padding:10px 6px;" onclick="switchAdminSub('subExpense')">💸 ব্যয়</button>
-                    <button class="btn" style="flex:1; margin:0; font-size:12px; padding:10px 6px;" onclick="switchAdminSub('subResult')">📊 ফলাফল এন্ট্রি</button>
-                    <button class="btn" style="flex:1; margin:0; font-size:12px; padding:10px 6px;" onclick="switchAdminSub('subNotice')">📢 নোটিশ</button>
-                </div>
-
-                <!-- সাব ১: বেতন গ্রহণ ও রশিদ প্রিন্ট (আদায়কারীর নাম সিলেকশনসহ) -->
-                <div id="subFees" class="admin-sub-section">
-                    <div class="card">
-                        <h2>🧾 বেতন গ্রহণ ও অটো-রশিদ তৈরি</h2>
-                        <div class="row">
-                            <div class="col">
-                                <label>ছাত্রের রোল নম্বর:</label>
-                                <input type="text" id="feeRoll" placeholder="রোল নম্বর দিন">
-                            </div>
-                            <div class="col">
-                                <label>যিনি বেতন নিচ্ছেন (আদায়কারীর নাম):</label>
-                                <input type="text" id="feeCollectorName" placeholder="আদায়কারীর নাম লিখুন" required>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col">
-                                <label>মাস বা খাতের নাম:</label>
-                                <input type="text" id="feeMonth" placeholder="যেমন: নভেম্বর ২০২৬ বেতন">
-                            </div>
-                            <div class="col">
-                                <label>টাকার পরিমাণ (৳):</label>
-                                <input type="number" id="feeAmount" placeholder="টাকা">
-                            </div>
-                        </div>
-                        <button class="btn" onclick="collectFee()">বেতন গ্রহণ ও রশিদ তৈরি করুন</button>
-
-                        <div id="printableReceipt" class="receipt-box">
-                            <div style="text-align:center; border-bottom:1px solid #ddd; padding-bottom:8px;">
-                                <h3 style="margin:0; color:var(--primary);">মাদরাসায়ে জামিউল উলূম ঘাটাইল</h3>
-                                <p style="margin:2px 0; font-size:12px;">কলেজ মোড়, ঘাটাইল, টাঙ্গাইল | বেতন পরিশোধ রশিদ</p>
-                            </div>
-                            <div style="margin-top:10px; font-size:13px; line-height:1.6;">
-                                <p style="margin:3px 0;"><strong>রশিদ নম্বর:</strong> <span id="rcNo"></span></p>
-                                <p style="margin:3px 0;"><strong>তারিখ:</strong> <span id="rcDate"></span></p>
-                                <p style="margin:3px 0;"><strong>ছাত্রের নাম:</strong> <span id="rcName"></span></p>
-                                <p style="margin:3px 0;"><strong>পিতার নাম:</strong> <span id="rcFather"></span></p>
-                                <p style="margin:3px 0;"><strong>রোল নম্বর:</strong> <span id="rcRoll"></span></p>
-                                <p style="margin:3px 0;"><strong>জামাত/বিভাগ:</strong> <span id="rcDept"></span></p>
-                                <p style="margin:3px 0;"><strong>খাত/মাস:</strong> <span id="rcDesc"></span></p>
-                                <p style="margin:3px 0;"><strong>পরিশোধিত টাকা:</strong> <span id="rcAmount" style="font-weight:bold;"></span> ৳</p>
-                                <p style="margin:3px 0;"><strong>আদায়কারী:</strong> <span id="rcCollector" style="font-weight:bold; color:var(--primary);"></span></p>
-                            </div>
-                            <div style="margin-top:25px; display:flex; justify-content:space-between; font-size:12px;">
-                                <span style="border-top:1px solid #333; padding-top:3px;">আদায়কারীর স্বাক্ষর</span>
-                                <span style="border-top:1px solid #333; padding-top:3px;">মুহতামিমের স্বাক্ষর</span>
-                            </div>
-                        </div>
-                        <button class="btn btn-gold" id="printBtn" style="display:none; margin-top:10px;" onclick="window.print()">রশিদ প্রিন্ট বা PDF করুন</button>
-                    </div>
-                </div>
-
-                <!-- সাব ২: ভর্তি অনুমোদন সেকশন -->
-                <div id="subAdmission" class="admin-sub-section" style="display:none;">
-                    <div class="card">
-                        <h2>📋 অনলাইন ভর্তি আবেদন অনুমোদন</h2>
-                        <div class="table-responsive">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>নাম</th>
-                                        <th>পিতা ও মাতা</th>
-                                        <th>বিভাগ</th>
-                                        <th>মোবাইল</th>
-                                        <th>পূর্ণ ঠিকানা</th>
-                                        <th>অ্যাকশন</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="admissionRequestsBody"></tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- সাব ৩: ছাত্র সংখ্যা ও তালিকা সেকশন -->
-                <div id="subStudents" class="admin-sub-section" style="display:none;">
-                    <div class="card">
-                        <h2>👥 ছাত্র সংখ্যা ও তালিকা (মোট ছাত্র: <span id="totalStudentCount">০</span> জন)</h2>
-                        <div class="table-responsive">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>রোল</th>
-                                        <th>নাম</th>
-                                        <th>পিতার নাম</th>
-                                        <th>জামাত/বিভাগ</th>
-                                        <th>মোবাইল</th>
-                                        <th>ঠিকানা</th>
-                                        <th>অ্যাকশন</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="adminStudentTableBody"></tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- সাব ৪: আয় সেকশন -->
-                <div id="subIncome" class="admin-sub-section" style="display:none;">
-                    <div class="card" style="border-top-color: var(--success);">
-                        <h2>💰 আয় এন্ট্রি ও তালিকা</h2>
-                        <label>খাতের বিবরণ:</label>
-                        <input type="text" id="incDesc" placeholder="যেমন: ছাত্র মাসিক ফি / দান">
-                        <label>টাকার পরিমাণ:</label>
-                        <input type="number" id="incAmount" placeholder="টাকা">
-                        <label>তারিখ:</label>
-                        <input type="date" id="incDate">
-                        <button class="btn" style="background-color:var(--success)" onclick="addIncome()">আয় যুক্ত করুন</button>
-                        
-                        <h3 style="margin-top:20px; font-size:15px;">সকল আয় তালিকা (মোট আয়: <span id="totalIncomeSum">০</span> ৳)</h3>
-                        <div class="table-responsive">
-                            <table>
-                                <thead><tr><th>তারিখ</th><th>বিবরণ</th><th>টাকা</th></tr></thead>
-                                <tbody id="incomeTableBody"></tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- সাব ৫: ব্যয় সেকশন -->
-                <div id="subExpense" class="admin-sub-section" style="display:none;">
-                    <div class="card" style="border-top-color: var(--danger);">
-                        <h2>💸 ব্যয় এন্ট্রি ও তালিকা</h2>
-                        <label>খরচের বিবরণ:</label>
-                        <input type="text" id="expDesc" placeholder="যেমন: শিক্ষক বেতন / বিদ্যুৎ বিল">
-                        <label>টাকার পরিমাণ:</label>
-                        <input type="number" id="expAmount" placeholder="টাকা">
-                        <label>তারিখ:</label>
-                        <input type="date" id="expDate">
-                        <button class="btn btn-danger" onclick="addExpense()">ব্যয় যুক্ত করুন</button>
-                        
-                        <h3 style="margin-top:20px; font-size:15px;">সকল ব্যয় তালিকা (মোট ব্যয়: <span id="totalExpenseSum">০</span> ৳)</h3>
-                        <div class="table-responsive">
-                            <table>
-                                <thead><tr><th>তারিখ</th><th>বিবরণ</th><th>টাকা</th></tr></thead>
-                                <tbody id="expenseTableBody"></tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- সাব ৬: ফলাফল এন্ট্রি সেকশন -->
-                <div id="subResult" class="admin-sub-section" style="display:none;">
-                    <div class="card">
-                        <h2>📊 পরীক্ষার ফলাফল এন্ট্রি</h2>
-                        <label>বিভাগ বা জামাত:</label>
-                        <select id="resAdminDept" onchange="toggleKitabSub('resAdminDept', 'resAdminKitabDiv')">
-                            <option value="নূরানী ও মক্তব বিভাগ">নূরানী ও মক্তব বিভাগ</option>
-                            <option value="নাজেরা বিভাগ">নাজেরা বিভাগ</option>
-                            <option value="হিফজ বিভাগ">হিফজ বিভাগ</option>
-                            <option value="কিতাব বিভাগ">কিতাব বিভাগ</option>
-                        </select>
-
-                        <div id="resAdminKitabDiv" class="kitab-sub-group">
-                            <label style="margin-top:0;">কিতাব বিভাগের জামাত:</label>
-                            <select id="resAdminSubDept">
-                                <option value="১ম বর্ষ">১ম বর্ষ</option>
-                                <option value="মিজান">মিজান</option>
-                                <option value="নাহবেমীর">নাহবেমীর</option>
-                                <option value="হেদাতুন্নাহু">হেদাতুন্নাহু</option>
-                                <option value="ক্বাফিয়া">ক্বাফিয়া</option>
-                                <option value="শরহেজামি">শরহেজামি</option>
-                                <option value="শরহে বেকায়া">শরহে বেকায়া</option>
-                                <option value="জালালাইন">জালালাইন</option>
-                                <option value="মিশকাত">মিশকাত</option>
-                            </select>
-                        </div>
-
-                        <label>রোল নম্বর:</label>
-                        <input type="text" id="resAdminRoll" placeholder="রোল">
-                        <label>শিক্ষার্থীর নাম:</label>
-                        <input type="text" id="resAdminName" placeholder="নাম">
-                        <label>ফলাফল / গ্রেড:</label>
-                        <input type="text" id="resAdminResult" placeholder="যেমন: মুমতাজ (GPA 5.00)">
-                        <button class="btn" onclick="saveResultAdmin()">ফলাফল সেভ করুন</button>
-                    </div>
-                </div>
-
-                <!-- সাব ৭: নোটিশ কন্ট্রোল -->
-                <div id="subNotice" class="admin-sub-section" style="display:none;">
-                    <div class="card">
-                        <h2>📢 জরুরি নোটিশ আপডেট</h2>
-                        <label>নতুন নোটিশ লিখুন:</label>
-                        <input type="text" id="adminNoticeInput" placeholder="নোটিশ...">
-                        <button class="btn" onclick="updateNoticeAdmin()">নোটিশ প্রকাশ করুন</button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-
-    <script>
-        // লোকাল স্টোরেজ থেকে ডেটা লোড বা জিরো ডেটা ইনিশিয়ালাইজেশন
-        let admissionsDB = JSON.parse(localStorage.getItem('jamiul_admissions')) || [];
-        let studentsDB = JSON.parse(localStorage.getItem('jamiul_students')) || [];
-        let resultsDB = JSON.parse(localStorage.getItem('jamiul_results')) || [];
-        let incomeDB = JSON.parse(localStorage.getItem('jamiul_income')) || [];
-        let expenseDB = JSON.parse(localStorage.getItem('jamiul_expense')) || [];
-        let receiptsDB = JSON.parse(localStorage.getItem('jamiul_receipts')) || [];
-        let noticeText = localStorage.getItem('jamiul_notice') || "মাদরাসায় ২০২৬ শিক্ষাবর্ষের ভর্তি কার্যক্রম চলছে।";
-
-        document.getElementById("liveNoticeText").innerText = noticeText;
-
-        // ট্যাব পরিবর্তন ফাংশন
-        function switchTab(tabId, btn) {
-            document.querySelectorAll('.section-content').forEach(el => el.classList.remove('active'));
-            document.querySelectorAll('.nav-tab').forEach(el => el.classList.remove('active'));
-            document.getElementById(tabId).classList.add('active');
-            btn.classList.add('active');
-        }
-
-        // কিতাব বিভাগ সাব-মেনু টগল
-        function toggleKitabSub(selectId, divId) {
-            const val = document.getElementById(selectId).value;
-            const subDiv = document.getElementById(divId);
-            subDiv.style.display = (val === "কিতাব বিভাগ") ? "block" : "none";
-        }
-
-        // অনলাইন ভর্তি আবেদন সাবমিট
-        function submitAdmission(e) {
-            e.preventDefault();
-            const name = document.getElementById("appStName").value.trim();
-            const dob = document.getElementById("appStDob").value;
-            const father = document.getElementById("appFatherName").value.trim();
-            const mother = document.getElementById("appMotherName").value.trim();
-            const phone = document.getElementById("appStPhone").value.trim();
-            const dept = document.getElementById("appStDept").value;
-            const subDept = (dept === "কিতাব বিভাগ") ? document.getElementById("appStSubDept").value : "";
-            const village = document.getElementById("appVillage").value.trim();
-            const post = document.getElementById("appPost").value.trim();
-            const thana = document.getElementById("appThana").value.trim();
-            const district = document.getElementById("appDistrict").value.trim();
-
-            const fullAddress = `গ্রাম: ${village}, ডাকঘর: ${post}, থানা: ${thana}, জেলা: ${district}`;
-
-            admissionsDB.push({ 
-                id: Date.now(), name, dob, father, mother, phone, dept, subDept, village, post, thana, district, address: fullAddress 
-            });
-            localStorage.setItem('jamiul_admissions', JSON.stringify(admissionsDB));
-            
-            alert("আলহামদুলিল্লাহ! আপনার ভর্তি আবেদন সফলভাবে জমা হয়েছে। কর্তৃপক্ষ যাচাই করে আপনার সাথে যোগাযোগ করবে।");
-            e.target.reset();
-            document.getElementById("appKitabDiv").style.display = "none";
-        }
-
-        // ফলাফল সার্চ
-        function searchResult() {
-            const dept = document.getElementById("searchResultDept").value;
-            const subDept = (dept === "কিতাব বিভাগ") ? document.getElementById("searchResultSubDept").value : "";
-            const query = document.getElementById("searchResultQuery").value.trim().toLowerCase();
-            const output = document.getElementById("searchResultOutput");
-
-            const found = resultsDB.find(item => {
-                const matchDept = item.dept === dept && (dept !== "কিতাব বিভাগ" || item.subDept === subDept);
-                const matchQuery = item.roll.toLowerCase() === query || item.name.toLowerCase().includes(query);
-                return matchDept && matchQuery;
-            });
-
-            if (found) {
-                let deptStr = found.dept;
-                if (found.subDept) deptStr += ` (${found.subDept})`;
-                output.innerHTML = `
-                    <div style="background:#eef7f0; padding:15px; border-radius:6px; border:1px solid #c2e0c6;">
-                        <p><strong>শিক্ষার্থীর নাম:</strong> ${found.name}</p>
-                        <p><strong>রোল নম্বর:</strong> ${found.roll}</p>
-                        <p><strong>বিভাগ/জামাত:</strong> ${deptStr}</p>
-                        <p><strong>ফলাফল:</strong> <span style="color:var(--success); font-weight:bold;">${found.result}</span></p>
-                    </div>
-                `;
-            } else {
-                output.innerHTML = `<p style="color:var(--danger);">❌ কোনো ফলাফল পাওয়া যায়নি। সঠিক রোল বা নাম দিয়ে চেষ্টা করুন।</p>`;
-            }
-        }
-
-        // বেতন বা রশিদ চেক
-        function checkReceipt() {
-            const query = document.getElementById("checkReceiptInput").value.trim().toLowerCase();
-            const output = document.getElementById("receiptCheckOutput");
-
-            const found = receiptsDB.find(r => r.rcNo.toLowerCase() === query || r.roll.toLowerCase() === query);
-            if (found) {
-                output.innerHTML = `
-                    <div style="background:#f9fff9; padding:15px; border-radius:6px; border:1px solid var(--primary);">
-                        <p><strong>রশিদ নম্বর:</strong> ${found.rcNo}</p>
-                        <p><strong>তারিখ:</strong> ${found.date}</p>
-                        <p><strong>ছাত্রের নাম:</strong> ${found.name} (রোল: ${found.roll})</p>
-                        <p><strong>পিতার নাম:</strong> ${found.father || ''}</p>
-                        <p><strong>জামাত:</strong> ${found.dept}</p>
-                        <p><strong>খাত:</strong> ${found.desc}</p>
-                        <p><strong>পরিমাণ:</strong> ${found.amount} ৳</p>
-                        <p><strong>আদায়কারী:</strong> ${found.collector}</p>
-                    </div>
-                `;
-            } else {
-                output.innerHTML = `<p style="color:var(--danger);">❌ এই রশিদ নম্বর বা রোল দিয়ে কোনো তথ্য পাওয়া যায়নি।</p>`;
-            }
-        }
-
-        // এডমিন লগইন
-        function loginAdmin() {
-            const pass = document.getElementById("adminPassInput").value;
-            const role = document.getElementById("adminRoleSelect").value;
-
-            if (pass === "jamiul2026") {
-                document.getElementById("adminLoginCard").style.display = "none";
-                document.getElementById("adminDashboardCard").style.display = "block";
-                document.getElementById("currentAdminName").innerText = role;
-                document.getElementById("feeCollectorName").value = role; // ডিফল্ট হিসেবে পদবি বসানো থাকবে, চাইলে নাম লেখা যাবে
-                document.getElementById("adminPassInput").value = "";
-                renderAdminData();
-            } else {
-                alert("❌ ভুল পাসওয়ার্ড!");
-            }
-        }
-
-        function logoutAdmin() {
-            document.getElementById("adminLoginCard").style.display = "block";
-            document.getElementById("adminDashboardCard").style.display = "none";
-        }
-
-        function switchAdminSub(subId) {
-            document.querySelectorAll('.admin-sub-section').forEach(el => el.style.display = 'none');
-            document.getElementById(subId).style.display = 'block';
-        }
-
-        // আয় যুক্ত করা
-        function addIncome() {
-            const desc = document.getElementById("incDesc").value.trim();
-            const amount = parseFloat(document.getElementById("incAmount").value);
-            const date = document.getElementById("incDate").value;
-
-            if (desc && amount > 0 && date) {
-                incomeDB.push({ desc, amount, date });
-                localStorage.setItem('jamiul_income', JSON.stringify(incomeDB));
-                document.getElementById("incDesc").value = "";
-                document.getElementById("incAmount").value = "";
-                document.getElementById("incDate").value = "";
-                renderIncome();
-                alert("✅ আয় সফলভাবে যুক্ত হয়েছে!");
-            } else {
-                alert("⚠️ সকল তথ্য সঠিকভাবে পূরণ করুন।");
-            }
-        }
-
-        function renderIncome() {
-            const tbody = document.getElementById("incomeTableBody");
-            tbody.innerHTML = "";
-            let total = 0;
-            incomeDB.forEach(item => {
-                total += item.amount;
-                tbody.innerHTML += `<tr><td>${item.date}</td><td>${item.desc}</td><td>${item.amount.toLocaleString()} ৳</td></tr>`;
-            });
-            document.getElementById("totalIncomeSum").innerText = total.toLocaleString();
-        }
-
-        // ব্যয় যুক্ত করা
-        function addExpense() {
-            const desc = document.getElementById("expDesc").value.trim();
-            const amount = parseFloat(document.getElementById("expAmount").value);
-            const date = document.getElementById("expDate").value;
-
-            if (desc && amount > 0 && date) {
-                expenseDB.push({ desc, amount, date });
-                localStorage.setItem('jamiul_expense', JSON.stringify(expenseDB));
-                document.getElementById("expDesc").value = "";
-                document.getElementById("expAmount").value = "";
-                document.getElementById("expDate").value = "";
-                renderExpense();
-                alert("✅ ব্যয় সফলভাবে যুক্ত হয়েছে!");
-            } else {
-                alert("⚠️ সকল তথ্য সঠিকভাবে পূরণ করুন।");
-            }
-        }
-
-        function renderExpense() {
-            const tbody = document.getElementById("expenseTableBody");
-            tbody.innerHTML = "";
-            let total = 0;
-            expenseDB.forEach(item => {
-                total += item.amount;
-                tbody.innerHTML += `<tr><td>${item.date}</td><td>${item.desc}</td><td>${item.amount.toLocaleString()} ৳</td></tr>`;
-            });
-            document.getElementById("totalExpenseSum").innerText = total.toLocaleString();
-        }
-
-        // ছাত্র তালিকা রেন্ডার
-        function renderStudents() {
-            const tbody = document.getElementById("adminStudentTableBody");
-            tbody.innerHTML = "";
-            document.getElementById("totalStudentCount").innerText = studentsDB.length;
-            studentsDB.forEach((st, index) => {
-                let deptStr = st.dept;
-                if (st.subDept) deptStr += ` (${st.subDept})`;
-                tbody.innerHTML += `
-                    <tr>
-                        <td>${st.roll}</td>
-                        <td>${st.name}</td>
-                        <td>${st.father || ''}</td>
-                        <td>${deptStr}</td>
-                        <td>${st.phone}</td>
-                        <td>${st.address}</td>
-                        <td><button class="btn btn-danger" style="padding:4px 8px; font-size:11px; margin:0;" onclick="deleteStudent(${index})">মুছুন</button></td>
-                    </tr>
-                `;
-            });
-        }
-
-        function deleteStudent(index) {
-            if (confirm("সত্যিই এই ছাত্রের তথ্য মুছে ফেলতে চান?")) {
-                studentsDB.splice(index, 1);
-                localStorage.setItem('jamiul_students', JSON.stringify(studentsDB));
-                renderStudents();
-            }
-        }
-
-        // বেতন গ্রহণ ও রশিদ জেনারেট
-        function collectFee() {
-            const roll = document.getElementById("feeRoll").value.trim();
-            const collector = document.getElementById("feeCollectorName").value.trim();
-            const desc = document.getElementById("feeMonth").value.trim();
-            const amount = parseFloat(document.getElementById("feeAmount").value);
-
-            const student = studentsDB.find(s => s.roll === roll);
-            if (!student) {
-                alert("❌ এই রোল নম্বরের কোনো ছাত্র পাওয়া যায়নি! আগে ভর্তি অনুমোদন করে রোল দিন।");
-                return;
-            }
-
-            if (!collector) {
-                alert("⚠️ যিনি বেতন নিচ্ছেন তার নাম লিখুন।");
-                return;
-            }
-
-            if (desc && amount > 0) {
-                const rcNo = "REC-" + Math.floor(1000 + Math.random() * 9000);
-                const date = new Date().toLocaleDateString('bn-BD');
-                let deptStr = student.dept;
-                if (student.subDept) deptStr += ` (${student.subDept})`;
-
-                const receiptData = {
-                    rcNo, date, name: student.name, father: student.father || '', roll: student.roll, dept: deptStr, desc, amount, collector
-                };
-
-                receiptsDB.push(receiptData);
-                localStorage.setItem('jamiul_receipts', JSON.stringify(receiptsDB));
-
-                // একই সাথে আয়ের মধ্যে স্বয়ংক্রিয় যুক্ত করা
-                incomeDB.push({ desc: `বেতন আদায়: ${student.name} (${desc}) - আদায়কারী: ${collector}`, amount, date: new Date().toISOString().split('T')[0] });
-                localStorage.setItem('jamiul_income', JSON.stringify(incomeDB));
-                renderIncome();
-
-                // রসিদে ডেটা বসানো
-                document.getElementById("rcNo").innerText = rcNo;
-                document.getElementById("rcDate").innerText = date;
-                document.getElementById("rcName").innerText = student.name;
-                document.getElementById("rcFather").innerText = student.father || '';
-                document.getElementById("rcRoll").innerText = student.roll;
-                document.getElementById("rcDept").innerText = deptStr;
-                document.getElementById("rcDesc").innerText = desc;
-                document.getElementById("rcAmount").innerText = amount.toLocaleString();
-                document.getElementById("rcCollector").innerText = collector;
-
-                document.getElementById("printableReceipt").style.display = "block";
-                document.getElementById("printBtn").style.display = "block";
-
-                document.getElementById("feeRoll").value = "";
-                document.getElementById("feeMonth").value = "";
-                document.getElementById("feeAmount").value = "";
-                alert("✅ বেতন সফলভাবে গ্রহণ করা হয়েছে এবং রশিদ তৈরি হয়েছে!");
-            } else {
-                alert("⚠️ সঠিক বিবরণ ও পরিমাণ দিন।");
-            }
-        }
-
-        // অনলাইন ভর্তি অনুমোদন রেন্ডার
-        function renderAdmissions() {
-            const tbody = document.getElementById("admissionRequestsBody");
-            tbody.innerHTML = "";
-            admissionsDB.forEach((adm, index) => {
-                let deptStr = adm.dept;
-                if (adm.subDept) deptStr += ` (${adm.subDept})`;
-                tbody.innerHTML += `
-                    <tr>
-                        <td><strong>${adm.name}</strong><br><small>জন্ম: ${adm.dob || ''}</small></td>
-                        <td>পিতা: ${adm.father || ''}<br>মাতা: ${adm.mother || ''}</td>
-                        <td>${deptStr}</td>
-                        <td>${adm.phone}</td>
-                        <td>${adm.address}</td>
-                        <td><button class="btn" style="padding:5px 8px; font-size:11px; margin:0;" onclick="approveAdmission(${index})">কনফার্ম ও রোল দিন</button></td>
-                    </tr>
-                `;
-            });
-        }
-
-        function approveAdmission(index) {
-            const adm = admissionsDB[index];
-            const roll = prompt(`${adm.name}-এর জন্য একটি রোল নম্বর দিন (যেমন: 101):`);
-            if (roll) {
-                studentsDB.push({
-                    roll, name: adm.name, dob: adm.dob, father: adm.father, mother: adm.mother, phone: adm.phone, dept: adm.dept, subDept: adm.subDept, address: adm.address
-                });
-                localStorage.setItem('jamiul_students', JSON.stringify(studentsDB));
-
-                admissionsDB.splice(index, 1);
-                localStorage.setItem('jamiul_admissions', JSON.stringify(admissionsDB));
-
-                renderAdmissions();
-                renderStudents();
-                alert(`✅ ${adm.name}-এর ভর্তি সফলভাবে কনফার্ম করা হয়েছে! রোল: ${roll}`);
-            }
-        }
-
-        // ফলাফল এন্ট্রি এডমিন
-        function saveResultAdmin() {
-            const dept = document.getElementById("resAdminDept").value;
-            const subDept = (dept === "কিতাব বিভাগ") ? document.getElementById("resAdminSubDept").value : "";
-            const roll = document.getElementById("resAdminRoll").value.trim();
-            const name = document.getElementById("resAdminName").value.trim();
-            const result = document.getElementById("resAdminResult").value.trim();
-
-            if (roll && name && result) {
-                resultsDB.push({ dept, subDept, roll, name, result });
-                localStorage.setItem('jamiul_results', JSON.stringify(resultsDB));
-                document.getElementById("resAdminRoll").value = "";
-                document.getElementById("resAdminName").value = "";
-                document.getElementById("resAdminResult").value = "";
-                alert("✅ পরীক্ষার ফলাফল সফলভাবে সেভ হয়েছে!");
-            } else {
-                alert("⚠️ সবগুলো ঘর পূরণ করুন।");
-            }
-        }
-
-        // নোটিশ আপডেট এডমিন
-        function updateNoticeAdmin() {
-            const txt = document.getElementById("adminNoticeInput").value.trim();
-            if (txt) {
-                noticeText = txt;
-                localStorage.setItem('jamiul_notice', noticeText);
-                document.getElementById("liveNoticeText").innerText = noticeText;
-                document.getElementById("adminNoticeInput").value = "";
-                alert("✅ নোটিশ সফলভাবে আপডেট হয়েছে!");
-            }
-        }
-
-        function renderAdminData() {
-            renderIncome();
-            renderExpense();
-            renderStudents();
-            renderAdmissions();
-        }
-    </script>
-</body>
-</html>
