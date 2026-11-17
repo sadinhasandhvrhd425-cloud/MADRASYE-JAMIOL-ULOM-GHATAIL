@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>মাদরাসায়ে জামিউল উলূম ঘাটাইল</title>
+    <style>
+        @font-face {
+            font-family: 'SutonnyMJ';
+            src: local('SutonnyMJ'), local('SutonnyMJ-Regular');
+        }
+        body {
+            font-family: 'SutonnyMJ', Arial, sans-serif;
+            background-color: #f0f4f1;
+            margin: 0;
+            padding: 0;
+            color: #111;
+        }
+        .header {
+            background-color: #0b4619;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 4px solid #d4af37;
+        }
+        .logo-img {
+            width: 95px;
+            height: 95px;
+            border-radius: 50%;
+            border: 3px solid #d4af37;
+            background: white;
+            object-fit: cover;
+        }
+        .container {
+            padding: 15px;
+            max-width: 600px;
+            margin: auto;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2, h3 {
+            margin: 5px 0;
+        }
+        .btn {
+            background-color: #0b4619;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'SutonnyMJ', Arial, sans-serif;
+            width: 100%;
+        }
+        .btn:hover {
+            background-color: #083312;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: 'SutonnyMJ', Arial, sans-serif;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <!-- আপনার আসল লোগো ইমেজ ফাইল -->
+        <img src="1173.jpg" alt="মাদরাসা লোগো" class="logo-img">
+        <h2>মাদরাসায়ে জামিউল উলূম ঘাটাইল</h2>
+        <p style="margin: 2px 0;">কলেজ মোড়, ঘাটাইল, টাঙ্গাইল</p>
+        <p style="margin: 2px 0; font-size: 14px;">স্থাপিত : ২০২৬ | মোবাইল : ০১৭৩২-৯৯৪০৩৯</p>
+    </div>
+
+    <div class="container">
+        <!-- ভূমিকা ও এডমিন প্যানেল -->
+        <div class="card">
+            <h3>এডমিন ও পোর্টাল ড্যাশবোর্ড</h3>
+            <label>ব্যবহারকারী / ভূমিকা নির্বাচন:</label>
+            <select id="roleSelect">
+                <option value="public">সাধারণ পোর্টাল (অভিভাবক ও QR ভিউ)</option>
+                <option value="muhtamim">১. মুহতামিম (প্রধান এডমিন)</option>
+                <option value="nayeb">২. নায়েবে মুহতামিম</option>
+                <option value="talimat">৩. নাজেমে তালিমাত</option>
+                <option value="head">৪. প্রধান শিক্ষক</option>
+            </select>
+        </div>
+
+        <!-- অনলাইন ভর্তি আবেদন -->
+        <div class="card">
+            <h3>অনলাইন ভর্তি আবেদন ফরম</h3>
+            <label>শিক্ষার্থীর নাম:</label>
+            <input type="text" placeholder="পূর্ণ নাম লিখুন">
+            
+            <label>অভিভাবকের মোবাইল নম্বর:</label>
+            <input type="text" placeholder="০১৭xxxxxxxx">
+
+            <label>বিভাগ বা জামাত:</label>
+            <select>
+                <option>নাজেরা বিভাগ</option>
+                <option>হিফজুল কুরআন বিভাগ</option>
+                <option>হিফজ রিভিশন বিভাগ</option>
+                <option>কিতাব বিভাগ: ১ম</option>
+                <option>মিজান</option>
+                <option>নাহবেমীর</option>
+                <option>হেদায়েতুন্নাহু</option>
+                <option>ক্বাফিয়া</option>
+                <option>শরহে বেকায়া</option>
+                <option>শরহেজামী</option>
+                <option>জালালাইন</option>
+                <option>মিশকাত</option>
+            </select>
+
+            <label>গ্রাম, থানা, জেলা, বিভাগ:</label>
+            <textarea placeholder="গ্রাম, থানা, জেলা ও বিভাগ লিখুন"></textarea>
+
+            <p style="color: red; font-size: 13px; font-weight: bold;">* শর্তাবলী: মাদরাসায় কোনো অবস্থাতেই মোবাইল ফোন এলাও না।</p>
+            <button class="btn">ভর্তি আবেদন জমা দিন</button>
+        </div>
+
+        <!-- ফলাফল ও বকেয়া যাচাই -->
+        <div class="card">
+            <h3>পরীক্ষার ফলাফল ও তথ্য যাচাই</h3>
+            <label>জামাত নির্বাচন:</label>
+            <select>
+                <option>নাজেরা বিভাগ</option>
+                <option>হিফজুল কুরআন বিভাগ</option>
+                <option>কিতাব বিভাগ</option>
+            </select>
+            <label>রোল নম্বর:</label>
+            <input type="text" placeholder="রোল নম্বর দিন">
+            <button class="btn">ফলাফল ও বকেয়া মাস দেখুন</button>
+        </div>
+    </div>
+
+</body>
+</html>
