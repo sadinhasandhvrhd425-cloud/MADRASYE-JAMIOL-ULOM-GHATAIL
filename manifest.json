@@ -1,0 +1,23 @@
+{
+  "name": "মাদরাসায়ে জামিউল উলূম ঘাটাইল",
+  "short_name": "জামিউল উলূম",
+  "description": "মাদরাসায়ে জামিউল উলূম ঘাটাইল ম্যানেজমেন্ট সিস্টেম",
+  "start_url": "/MADRASYE-JAMIUL-ULOM-GHATAIL/",
+  "scope": "/MADRASYE-JAMIUL-ULOM-GHATAIL/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f766e",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "1.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "1.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
