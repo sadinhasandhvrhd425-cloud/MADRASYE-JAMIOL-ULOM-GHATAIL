@@ -6,6 +6,9 @@
     <title>মাদরাসায়ে জামিউল উলূম ঘাটাইল</title>
     <meta name="description" content="মাদরাসায়ে জামিউল উলূম ঘাটাইল - কলেজ মোড়, ঘাটাইল, টাঙ্গাইল। নূরানী, নাজেরা, হিফজ এবং কিতাব বিভাগ সংবলিত আদর্শ দ্বীনি শিক্ষা প্রতিষ্ঠান।">
     <link rel="icon" type="image/jpeg" href="1.jpg">
+    <link rel="manifest" href="/MADRASYE-JAMIUL-ULOM-GHATAIL/manifest.json">
+    <meta name="theme-color" content="#0b4619">
+    <link rel="apple-touch-icon" href="/MADRASYE-JAMIUL-ULOM-GHATAIL/1.jpg">
 
     <style>
         :root {
@@ -1114,5 +1117,14 @@
             renderNoticesAdmin();
         }
     </script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/MADRASYE-JAMIUL-ULOM-GHATAIL/sw.js')
+                    .catch((err) => console.error('Service Worker registration failed:', err));
+            });
+        }
+    </script>
 </body>
-</html>
+    </html>
